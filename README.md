@@ -1,42 +1,53 @@
 ---
 
-# 📊 Data Analysis Project – Sales & Customer Insights
+# 📊 Sales & Customer Insights Dashboard
+
+![Excel](https://img.shields.io/badge/Tool-Excel-green)
+![Data Analysis](https://img.shields.io/badge/Focus-Data%20Analysis-blue)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
+---
+
+## 📌 Project Overview
+
+This project focuses on analyzing **sales and customer data** to uncover meaningful business insights.
+The workflow includes **data cleaning, data imputation, transformation, and visualization** using Microsoft Excel.
+
+---
 
 ## 🧹 Data Cleaning
 
-* No duplicate records were found; however, inconsistencies were identified and resolved.
-* **Sheet 1:**
+* Verified dataset integrity — **no duplicate records found**
+* Resolved inconsistencies across multiple sheets:
 
-  * Cleaned *Customer ID* and *Country* using **Find & Replace**.
-  * Fixed *Customer Name* formatting using:
+  * Cleaned *Customer ID* and *Country* using **Find & Replace**
+  * Standardized *Customer Name* using:
 
     * `TRIM()` → removed extra spaces
-    * `PROPER()` → capitalized names properly
-* **Sheet 2:**
-
-  * Standardized *Product ID* using **Find & Replace**.
+    * `PROPER()` → formatted names properly
+  * Fixed *Product ID* inconsistencies in Sheet 2
 
 ---
 
 ## 🔄 Data Imputation
 
-* **Loyalty Level (Sheet 1):**
+Handled missing values using logical and statistical methods:
+
+* **Categorical Data (Loyalty Level):**
 
   ```excel
   =IF(ISBLANK(cell), "Unknown", cell)
   ```
 
-  * Replaced missing values with **"Unknown"**
-
-* **Cost & Stock Columns:**
+* **Numerical Data (Cost, Stock):**
 
   ```excel
   =IF(ISBLANK(cell), AVERAGEIF(range, criteria, average_range), cell)
   ```
 
-  * Filled missing values using **subcategory-wise averages**
+  ✔ Filled values using **subcategory-based averages**
 
-* **Sales Fact Table (Sheet 4):**
+* **Sales Fact Table Adjustments:**
 
   * **Unit Price:**
 
@@ -49,50 +60,69 @@
     =IF(ISBLANK(Discount), 1 - (Total_Amount / (Qty * Unit_Price)), Discount)
     ```
 
-* Established relationships across sheets using **VLOOKUP** for integrated analysis.
+* Integrated datasets using **VLOOKUP** for relational mapping
 
-* Used **Data Analysis ToolPak** to calculate:
+* Performed statistical analysis using **Data Analysis ToolPak**:
 
-  * Sum, Average, Median, Mode, Skewness
-  * Applied on *Quantity* and *Total Price*
+  * Sum | Average | Median | Mode | Skewness
 
 ---
 
-## 📈 Pivot Tables & Visualizations
+## 📈 Dashboard & Visualizations
 
-* Built interactive dashboards using PivotTables and charts:
+Built an interactive Excel dashboard with:
 
-  * 📅 Month-wise & Year-wise **Total Sales**
-  * 🛍️ **Category-wise Sales Count**
-  * 🏬 **Store Type-wise Sales Count**
-  * 👩‍🦰👨 **Gender vs Category Analysis**
-  * 🔝 **Top 10 Products by Sales**
+* 📅 **Sales Trend Analysis** (Month-wise & Year-wise)
+* 🛍️ **Category-wise Sales Distribution**
+* 🏬 **Store Type Performance**
+* 👥 **Gender-based Purchase Analysis**
+* 🔝 **Top 10 Performing Products**
 
-* 🎛️ Added a **common slicer** for dynamic filtering across all visuals
+🎛️ **Interactive Feature:**
+
+* Unified **Slicer** for dynamic filtering across all charts
 
 ---
 
 ## 🔍 Key Insights
 
-* 👩 **Female customers** contributed the majority of purchases
-* 🌍 **North Region** recorded the highest sales
-* 🛒 **Online stores** generated the largest share of revenue
-* 🏅 **Sports category** is the most popular among all customers
+* 👩 Female customers drive **higher purchase volume**
+* 🌍 North Region leads in **overall sales performance**
+* 🛒 Online stores contribute the **largest revenue share**
+* 🏅 Sports category is the **top-performing segment**
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Tools & Skills Used
 
-* Microsoft Excel
+* **Microsoft Excel**
 * Pivot Tables & Charts
 * Data Analysis ToolPak
-* Functions: `TRIM()`, `PROPER()`, `IF()`, `ISBLANK()`, `AVERAGEIF()`, `VLOOKUP()`
+* Data Cleaning & Transformation
+* Functions:
+
+  ```
+  TRIM(), PROPER(), IF(), ISBLANK(), AVERAGEIF(), VLOOKUP()
+  ```
+
+---
+
+## 📷 Dashboard Preview
+
+> *(Add your dashboard screenshots here for better presentation)*
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates effective **data cleaning, transformation, and analysis** using Excel to generate meaningful business insights and interactive dashboards.
+This project highlights the ability to:
+
+* Clean and preprocess raw data
+* Handle missing values effectively
+* Build interactive dashboards
+* Derive actionable business insights
 
 ---
-<img width="1012" height="451" alt="Dashboard Report" src="https://github.com/user-attachments/assets/10eb509f-6ed7-483c-b593-f438fb9ad280" />
+<img width="1012" height="451" alt="Dashboard Report" src="https://github.com/user-attachments/assets/ecf8718f-f0ef-4ffc-8a6c-cca2bbc8ef26" />
+
+
