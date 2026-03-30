@@ -109,7 +109,7 @@ Built an interactive Excel dashboard with:
 
 ## 📷 Dashboard Preview
 
-> *(Add your dashboard screenshots here for better presentation)*
+<img width="1012" height="451" alt="Dashboard Report" src="https://github.com/user-attachments/assets/ecf8718f-f0ef-4ffc-8a6c-cca2bbc8ef26" />
 
 ---
 
@@ -123,6 +123,6 @@ This project highlights the ability to:
 * Derive actionable business insights
 
 ---
-<img width="1012" height="451" alt="Dashboard Report" src="https://github.com/user-attachments/assets/ecf8718f-f0ef-4ffc-8a6c-cca2bbc8ef26" />
+
 
 
